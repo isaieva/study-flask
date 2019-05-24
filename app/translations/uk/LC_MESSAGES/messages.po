@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-24 18:12+0300\n"
+"POT-Creation-Date: 2019-05-24 22:04+0300\n"
 "PO-Revision-Date: 2019-05-24 18:15+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -35,7 +35,7 @@ msgstr "Пароль"
 msgid "Remember Me"
 msgstr "Запам'ятати мене"
 
-#: app/forms.py:12 app/routes.py:79 app/templates/login.html:5
+#: app/forms.py:12 app/routes.py:86 app/templates/login.html:5
 msgid "Sign In"
 msgstr "Увійти"
 
@@ -47,7 +47,7 @@ msgstr "Електронна пошла"
 msgid "Repeat Password"
 msgstr "Повторити пароь"
 
-#: app/forms.py:22 app/routes.py:100 app/templates/register.html:5
+#: app/forms.py:22 app/routes.py:107 app/templates/register.html:5
 msgid "Register"
 msgstr "Зареєструватися"
 
@@ -75,68 +75,76 @@ msgstr "Надіслати"
 msgid "Say something"
 msgstr "Що відбувається?"
 
-#: app/routes.py:35
+#: app/routes.py:42
 msgid "Your post is now live!"
 msgstr "Ви зробили пост!"
 
-#: app/routes.py:44 app/templates/base.html:27
+#: app/routes.py:51 app/templates/base.html:21
 msgid "Home"
 msgstr "Додому"
 
-#: app/routes.py:59 app/templates/base.html:28
+#: app/routes.py:66 app/templates/base.html:22
 msgid "Explore"
 msgstr "Розвідка"
 
-#: app/routes.py:72
+#: app/routes.py:79
 msgid "Invalid username or password"
 msgstr "Неправильне ім'я або пароль"
 
-#: app/routes.py:98
+#: app/routes.py:105
 msgid "Congratulations, you are now a registered user!"
 msgstr "Вітаємо, ви зареєстрований користувач!"
 
-#: app/routes.py:113
+#: app/routes.py:120
 msgid "Check your email for the instructions to reset your password"
 msgstr "Перевірте пошту на наявність інструкцій для скидання паролю"
 
-#: app/routes.py:116 app/templates/reset_password_request.html:5
+#: app/routes.py:123 app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "Скинути пароль"
 
-#: app/routes.py:130
+#: app/routes.py:137
 msgid "Your password has been reset."
 msgstr "Ваш пароль було змінено"
 
-#: app/routes.py:158
+#: app/routes.py:165
 msgid "Your changes have been saved."
 msgstr "Зміни збережено"
 
-#: app/routes.py:163 app/templates/edit_profile.html:5
+#: app/routes.py:170 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Редагувати профіль"
 
-#: app/routes.py:172 app/routes.py:188
+#: app/routes.py:179 app/routes.py:195
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Користувач %(username)s не знайдений."
 
-#: app/routes.py:175
+#: app/routes.py:182
 msgid "You cannot follow yourself!"
 msgstr "Ви не можете підписатися на самого себе!"
 
-#: app/routes.py:179
+#: app/routes.py:186
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Ви слідкуєте за %(username)s!"
 
-#: app/routes.py:191
+#: app/routes.py:198
 msgid "You cannot unfollow yourself!"
 msgstr "Ви не можете відписатися від самого себе!"
 
-#: app/routes.py:195
+#: app/routes.py:202
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Ви відписалися від %(username)s."
+
+#: app/translate.py:10
+msgid "Error: the translation service is not configured."
+msgstr "Помилка: сервіс перекладу не сконфігурований"
+
+#: app/translate.py:17
+msgid "Error: the translation service failed."
+msgstr "Помилка сервісу перекладу"
 
 #: app/templates/404.html:4
 msgid "Not Found"
@@ -159,21 +167,29 @@ msgstr "Адміністратора повідомлено. Вибачте за
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s повідомив %(when)s"
 
-#: app/templates/base.html:10
+#: app/templates/_post.html:28
+msgid "Translate"
+msgstr "Перекласти"
+
+#: app/templates/base.html:4
 msgid "Welcome to Microblog"
 msgstr "Ласкаво просимо до Мікроблогу!"
 
-#: app/templates/base.html:32
+#: app/templates/base.html:26
 msgid "Login"
 msgstr "Увійти"
 
-#: app/templates/base.html:34
+#: app/templates/base.html:28
 msgid "Profile"
 msgstr "Профіль"
 
-#: app/templates/base.html:35
+#: app/templates/base.html:29
 msgid "Logout"
 msgstr "Вийти"
+
+#: app/templates/base.html:66
+msgid "Error: Could not contact server."
+msgstr "Помилка: немає зв'язку з сервером"
 
 #: app/templates/index.html:5
 #, python-format
