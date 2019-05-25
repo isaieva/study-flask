@@ -1,0 +1,7 @@
+Terminal commands to emulate email server: 
+
+1. python -m smtpd -n -c DebuggingServer localhost:8025
+2. export MAIL_SERVER=localhost
+3. export MAIL_PORT=8025
+
+(type in activated virtual env)
