@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-26 04:40+0300\n"
+"POT-Creation-Date: 2019-05-29 22:09+0300\n"
 "PO-Revision-Date: 2019-05-24 18:15+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -100,7 +100,7 @@ msgstr "Ваш пароль було змінено"
 msgid "About me"
 msgstr "Про мене"
 
-#: app/main/forms.py:13 app/main/forms.py:28
+#: app/main/forms.py:13 app/main/forms.py:28 app/main/forms.py:45
 msgid "Submit"
 msgstr "Надіслати"
 
@@ -108,9 +108,13 @@ msgstr "Надіслати"
 msgid "Say something"
 msgstr "Що відбувається?"
 
-#: app/main/forms.py:32 app/main/routes.py:149
+#: app/main/forms.py:32 app/main/routes.py:156
 msgid "Search"
 msgstr "Пошук"
+
+#: app/main/forms.py:43
+msgid "Message"
+msgstr "Повідомлення"
 
 #: app/main/routes.py:36
 msgid "Your post is now live!"
@@ -124,43 +128,51 @@ msgstr "Додому"
 msgid "Explore"
 msgstr "Розвідка"
 
-#: app/main/routes.py:88
+#: app/main/routes.py:95
 msgid "Your changes have been saved."
 msgstr "Зміни збережено"
 
-#: app/main/routes.py:93 app/templates/edit_profile.html:5
+#: app/main/routes.py:100 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Редагувати профіль"
 
-#: app/main/routes.py:102 app/main/routes.py:118
+#: app/main/routes.py:109 app/main/routes.py:125
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Користувач %(username)s не знайдений."
 
-#: app/main/routes.py:105
+#: app/main/routes.py:112
 msgid "You cannot follow yourself!"
 msgstr "Ви не можете підписатися на самого себе!"
 
-#: app/main/routes.py:109
+#: app/main/routes.py:116
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Ви слідкуєте за %(username)s!"
 
-#: app/main/routes.py:121
+#: app/main/routes.py:128
 msgid "You cannot unfollow yourself!"
 msgstr "Ви не можете відписатися від самого себе!"
 
-#: app/main/routes.py:125
+#: app/main/routes.py:132
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "Ви відписалися від %(username)s."
 
-#: app/templates/_post.html:14
+#: app/main/routes.py:170
+msgid "Your message has been sent."
+msgstr "Ваше повідомлення надіслано"
+
+#: app/main/routes.py:172
+msgid "Send Message"
+msgstr "Надіслати повідомлення"
+
+#: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s повідомив %(when)s"
 
-#: app/templates/_post.html:25
+#: app/templates/_post.html:27
 msgid "Translate"
 msgstr "Перекласти"
 
@@ -172,15 +184,19 @@ msgstr "Ласкаво просимо до Мікроблогу!"
 msgid "Login"
 msgstr "Увійти"
 
-#: app/templates/base.html:39
+#: app/templates/base.html:41 app/templates/messages.html:4
+msgid "Messages"
+msgstr "Повідомленя"
+
+#: app/templates/base.html:44
 msgid "Profile"
 msgstr "Профіль"
 
-#: app/templates/base.html:40
+#: app/templates/base.html:45
 msgid "Logout"
 msgstr "Вийти"
 
-#: app/templates/base.html:77
+#: app/templates/base.html:82
 msgid "Error: Could not contact server."
 msgstr "Помилка: немає зв'язку з сервером"
 
@@ -189,13 +205,21 @@ msgstr "Помилка: немає зв'язку з сервером"
 msgid "Hi, %(username)s!"
 msgstr "Доброго дня, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:31
+#: app/templates/index.html:17 app/templates/user.html:34
 msgid "Newer posts"
 msgstr "Новіші пости"
 
-#: app/templates/index.html:22 app/templates/user.html:36
+#: app/templates/index.html:22 app/templates/user.html:39
 msgid "Older posts"
 msgstr "Старіші пости"
+
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr "Новіші повідомлення"
+
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr "Старіші повідомлення"
 
 #: app/templates/search.html:4
 msgid "Search Results"
@@ -209,20 +233,25 @@ msgstr "Попередні результати"
 msgid "Next results"
 msgstr "Наступні результати"
 
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr "Надіслати повідомлення %(recipient)s"
+
 #: app/templates/user.html:8
 msgid "User"
 msgstr "Користувач"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:11 app/templates/user_popup.html:13
 msgid "Last seen on"
 msgstr "Був у мережі"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:16
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d підписників"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:13 app/templates/user_popup.html:17
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d цікавих людей"
@@ -231,13 +260,17 @@ msgstr "%(count)d цікавих людей"
 msgid "Edit your profile"
 msgstr "Редагувати профіль"
 
-#: app/templates/user.html:17
+#: app/templates/user.html:17 app/templates/user_popup.html:21
 msgid "Follow"
 msgstr "Слідкувати"
 
-#: app/templates/user.html:19
+#: app/templates/user.html:19 app/templates/user_popup.html:25
 msgid "Unfollow"
 msgstr "Відписатися"
+
+#: app/templates/user.html:22
+msgid "Send private message"
+msgstr "Надіслати приватне повідомлення"
 
 #: app/templates/auth/login.html:12
 msgid "New User?"
