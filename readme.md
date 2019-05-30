@@ -1,4 +1,4 @@
-Flask tutorials: https://blog.miguelgrinberg.com/index 
+Here I built example web application to learn flask practices with [Miguel Grinberg](https://blog.miguelgrinberg.com/index) :heart: tutorials 
 
 # Notes
 
