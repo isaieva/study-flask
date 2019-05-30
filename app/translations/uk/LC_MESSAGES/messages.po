@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-29 22:09+0300\n"
+"POT-Creation-Date: 2019-05-30 04:17+0300\n"
 "PO-Revision-Date: 2019-05-24 18:15+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: app/__init__.py:20
+#: app/__init__.py:22
 msgid "Please log in to access this page."
 msgstr "Будь ласка, авторизуйтеся для доступу до сторінки"
 
@@ -159,13 +159,21 @@ msgstr "Ви не можете відписатися від самого себ
 msgid "You are not following %(username)s."
 msgstr "Ви відписалися від %(username)s."
 
-#: app/main/routes.py:170
+#: app/main/routes.py:171
 msgid "Your message has been sent."
 msgstr "Ваше повідомлення надіслано"
 
-#: app/main/routes.py:172
+#: app/main/routes.py:173
 msgid "Send Message"
 msgstr "Надіслати повідомлення"
+
+#: app/main/routes.py:210
+msgid "An export task is currently in progress"
+msgstr "Експорт вже виконується"
+
+#: app/main/routes.py:212
+msgid "Exporting posts..."
+msgstr "Триває експорт постів..."
 
 #: app/templates/_post.html:16
 #, python-format
@@ -188,15 +196,15 @@ msgstr "Увійти"
 msgid "Messages"
 msgstr "Повідомленя"
 
-#: app/templates/base.html:44
+#: app/templates/base.html:51
 msgid "Profile"
 msgstr "Профіль"
 
-#: app/templates/base.html:45
+#: app/templates/base.html:52
 msgid "Logout"
 msgstr "Вийти"
 
-#: app/templates/base.html:82
+#: app/templates/base.html:102
 msgid "Error: Could not contact server."
 msgstr "Помилка: немає зв'язку з сервером"
 
@@ -205,11 +213,11 @@ msgstr "Помилка: немає зв'язку з сервером"
 msgid "Hi, %(username)s!"
 msgstr "Доброго дня, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:34
+#: app/templates/index.html:17 app/templates/user.html:39
 msgid "Newer posts"
 msgstr "Новіші пости"
 
-#: app/templates/index.html:22 app/templates/user.html:39
+#: app/templates/index.html:22 app/templates/user.html:44
 msgid "Older posts"
 msgstr "Старіші пости"
 
@@ -260,15 +268,19 @@ msgstr "%(count)d цікавих людей"
 msgid "Edit your profile"
 msgstr "Редагувати профіль"
 
-#: app/templates/user.html:17 app/templates/user_popup.html:21
+#: app/templates/user.html:18
+msgid "Export your posts"
+msgstr "Експортувати мої пости"
+
+#: app/templates/user.html:22 app/templates/user_popup.html:21
 msgid "Follow"
 msgstr "Слідкувати"
 
-#: app/templates/user.html:19 app/templates/user_popup.html:25
+#: app/templates/user.html:24 app/templates/user_popup.html:25
 msgid "Unfollow"
 msgstr "Відписатися"
 
-#: app/templates/user.html:22
+#: app/templates/user.html:27
 msgid "Send private message"
 msgstr "Надіслати приватне повідомлення"
 
